@@ -1,0 +1,28 @@
+.list{
+    width: 160px;
+    margin:20px auto 0;
+}
+input{
+    width: 160px;
+}
+.list-show{
+    margin-top:12px;
+    height: 300px;
+    border:1px solid darkgrey;
+}
+.list-item{
+    border-bottom: 1px solid darkgrey;
+}
+.glyphicon-ok{
+    color:grey;
+}
+.glyphicon-ok span{
+    padding-left: 8px;
+}
+.glyphicon-ok.active span{
+    text-decoration: line-through;
+}
+.glyphicon-remove{
+    color:red;
+    float:right;
+}
