@@ -18,6 +18,10 @@ input{
 }
 .glyphicon-ok span{
     padding-left: 8px;
+    color:black;
+}
+.glyphicon-ok.active{
+    color:black;
 }
 .glyphicon-ok.active span{
     text-decoration: line-through;

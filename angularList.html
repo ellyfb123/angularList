@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/angularList.js"></script>
 </head>
 <body ng-app="angularList">
 
 <div ng-controller="listController as list" class="list">
     <div ng-controller="addController as addCtl">
-        <input type="text" ng-blur="addCtl.addItem(list)" ng-model="addCtl.item.itemName"/>
+        <input type="text" ng-blur="addCtl.addItem(list)" ng-model="addCtl.item.itemName" placeholder="And New Item..."/>
     </div>
     <div class="list-show">
-        <div class="list-item" ng-repeat="item in list.items" >
+        <div class="list-item" ng-repeat="item in list.items">
             <i class='glyphicon glyphicon-ok' ng-class="{active:active} " ng-click="active=true">
                 <span>{{item.itemName}}</span>
             </i>
